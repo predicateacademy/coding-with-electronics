@@ -163,40 +163,41 @@ def prism():
 
 def earthquake():
    x, y, z = mc.player.getPos()
-   disasters.earthquake(mc, x, y)
+   disasters.earthquake(mc, int(x), int(z))
 
 def sinkhole():
    x, y, z = mc.player.getPos()
-   disasters.sinkhole(mc, x, y)
+   disasters.sinkhole(mc, int(x), int(z))
 
 def geyser():
    x, y, z = mc.player.getPos()
-   disasters.geyser(mc, x, y)
+   disasters.geyser(mc, int(x), int(z))
 
 def eruption():
    x, y, z = mc.player.getPos()
-   disasters.eruption(mc, x, y)
+   disasters.eruption(mc, int(x), int(z))
 
 def meteor_shower():
    x, y, z = mc.player.getPos()
-   disasters.meteor_shower(mc, x, y)
+   disasters.meteor_shower(mc, int(x), int(z))
 
 def heatwave():
    x, y, z = mc.player.getPos()
-   disasters.heatwave(mc, x, y)
+   disasters.heatwave(mc, int(x), int(z))
 
 def tsunami():
    x, y, z = mc.player.getPos()
-   disasters.tsunami(mc, x, y)
+   disasters.tsunami(mc, int(x), int(z))
+
 
 
 
 # - create our buttons
 b1 = Button(5, pull_up=True)
-b1.when_pressed = tunnel
+b1.when_pressed = prism
 b2 = Button(6, pull_up=True)
-b2.when_pressed = prism
+b2.when_pressed = shell
 b3 = Button(13, pull_up=True)
-b3.when_pressed = diamond
+b3.when_pressed = vacuum
 b4 = Button(19, pull_up=True)
 b4.when_pressed = random_cube
